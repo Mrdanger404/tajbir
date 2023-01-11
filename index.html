@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+        <meta charset="UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title></title>
+
+        <style type="text/css" media="all">
+
+                * {
+
+  font-family: 'Poppins', sans-serif;
+
+  margin: 4px;
+
+  padding: 0;
+
+  box-sizing: border-box;
+
+  scroll-behavior: smooth;
+
+}
+
+.header{
+
+        background-color: white;
+
+        height: 100px;
+
+        width: 480px;
+
+        position: relative;
+
+        box-shadow: 0px 5px 10px 15px rgba(1 1 1 /15%);
+
+        border: 4px solid gold;
+
+        border-radius: 25px;
+
+        
+
+}
+
+.logo{
+
+        text-decoration: gold;
+
+        font-size: 60px;
+
+        text-align: center;
+
+        margin-right: 90px;
+
+        padding-top: 10px;
+
+        
+
+}
+
+.menu{
+
+        position: fixed;
+
+        float: left;
+
+        position: relative;
+
+        margin-left: 20px;
+
+        margin-top: 20px;
+
+        padding: 5px;
+
+        box-shadow: 0px 5px 10px 15px rgba(1 1 1 /15%);
+
+        border-radius: 25px;
+
+}
+
+.drop-down{
+
+        text-align: center;
+
+        display: none;
+
+        position: absolute;
+
+        min-width: 160px;
+
+        background-color: white;
+
+        box-shadow: 0px 5px 10px 15px rgba(1 1 1 /15%);
+
+        border-radius: 25px;
+
+        z-index: 1;
+
+        margin-top: 25px;
+
+        margin-left: 25px;
+
+}
+
+span{
+
+        font-size: 25px;
+
+}
+
+.drop-down p{
+
+        height: 50px;
+
+        background-color: red;
+
+        padding-top: 16px;
+
+        border-radius: 25px;
+
+}
+
+drop-down p,a{
+
+        padding-top: 1px;
+
+        text-decoration: none;
+
+}
+
+.menu:hover .drop-down{
+
+        display: block;
+
+        rotate: 25deg;
+
+}
+
+.menu:hover{
+
+        transform: rotate(-25deg);
+
+        transition: 1s;
+
+        
+
+}
+
+.container{
+
+        height: 3080px;
+
+        width: 480px;
+
+        box-shadow: 0px 5px 10px 15px rgba(1 1 1 /15%);
+
+        margin-top: 1px;
+
+        margin-top: 50px;
+
+        border-radius: 25px;
+
+        padding-top: 30px;
+
+        border: 4px solid aqua;
+
+}
+
+#photography{
+
+        height: 500px;
+
+        width: 400px;
+
+        box-shadow: 0px 5px 10px 15px rgba(1 1 1 /15%);
+
+        margin-left: 40px;
+
+        border-radius: 25px;
+
+        padding-top: 30px;
+
+}
+
+.photography{
+
+        height: 350px;
+
+        width: 250px;
+
+        box-shadow: 0px 5px 10px 15px rgba(1 1 1 /15%);
+
+        margin-left: 70px;
+
+        border-radius: 25px;
+
+        background-image: url(/IMG20230107165202.jpg);
+
+        background-size: cover;
+
+        background-position: center;
+
+}
+
+.photography:hover{
+
+        transform: scale(1.1);
+
+        transition: 1s;
+
+}
+
+#photography h1{
+
+        text-align: center;
+
+        margin-top: 30px;
+
+}
+
+button{
+
+        margin-top: 20px;
+
+        height: 40px;
+
+        width: 80px;
+
+        background-color: white;
+
+        border-radius: 25px;
+
+}
+
+.left{
+
+        float: left;
+
+        margin-left: 40px;
+
+}
+
+.right{
+
+        float: right;
+
+        margin-right: 40px;
+
+}
+
+#service{
+
+        text-align: center;
+
+        height: 2000px;
+
+        width: 400px;
+
+        box-shadow: 0px 5px 10px 15px rgba(1 1 1 /15%);
+
+        margin-top: 40px;
+
+        margin-left: 40px;
+
+        border-radius: 25px;
+
+        padding-top: 30px;
+
+}
+
+#service h1{
+
+        color: blue;
+
+}
+
+.content{
+
+        height: 600px;
+
+        width: 300px;
+
+        box-shadow: 0px 5px 10px 15px rgba(1 1 1 /15%);
+
+        margin-left: 50px;
+
+        margin-top: 10px;
+
+        border-radius: 25px;
+
+        padding-top: 30px;
+
+}
+
+.content:hover{
+
+        transform: scale(1.1);
+
+        transition: 1s;
+
+}
+
+h1{
+
+        padding-bottom: 10px;
+
+}
+
+img{
+
+        height: 350px;
+
+        width: 250px;
+
+        border-radius: 25px;
+
+}
+
+.web-development{
+
+        height: 600px;
+
+        width: 300px;
+
+        box-shadow: 0px 5px 10px 15px rgba(1 1 1 /15%);
+
+        margin-left: 50px;
+
+        margin-top: 40px;
+
+        border-radius: 25px;
+
+        padding-top: 30px;
+
+}
+
+.web-development:hover{
+
+        transform: scale(1.1);
+
+        transition: 1s;
+
+}
+
+.photographer{
+
+        height: 600px;
+
+        width: 300px;
+
+        box-shadow: 0px 5px 10px 15px rgba(1 1 1 /15%);
+
+        margin-left: 50px;
+
+        margin-top: 40px;
+
+        border-radius: 25px;
+
+        padding-top: 30px;
+
+}
+
+.photographer:hover{
+
+        transform: scale(1.1);
+
+        transition: 1s;
+
+        
+
+}
+
+.contact{
+
+        text-align: center;
+
+        height: 300px;
+
+        width: 400px;
+
+        box-shadow: 0px 5px 10px 15px rgba(1 1 1 /15%);
+
+        margin-left: 40px;
+
+        margin-top: 80px;
+
+        border-radius: 25px;
+
+        padding-top: 30px;
+
+        
+
+}
+
+.phone{
+
+        height: 50px;
+
+        width: 350px;
+
+        box-shadow: 0px 5px 10px 15px rgba(1 1 1 /15%);
+
+        margin-left: 25px;
+
+        padding-top: 8px;
+
+        border-radius: 25px;
+
+        background-color: blue;
+
+}
+
+.email{
+
+        height: 85px;
+
+        width: 350px;
+
+        box-shadow: 0px 5px 10px 15px rgba(1 1 1 /15%);
+
+        margin-top: 40px;
+
+        margin-left: 25px;
+
+        padding-top: 8px;
+
+        border-radius: 25px;
+
+        background-color: blue;
+
+}
+
+.contact:hover{
+
+        transform: scale(1.1);
+
+        transition: 2s;
+
+}
+
+.drop-down p,a{
+
+        animation: web-design 2s;
+
+        animation-iteration-count: 1;
+
+        animation-direction: alternate;
+
+        
+
+        -webkit-animation: web-design 2s;
+
+        -webkit-animation-iteration-count: 1;
+
+        -webkit-animation-direction: alternate;
+
+}
+
+@keyframes web-design{
+
+        from{
+
+                height: 0px;
+
+                
+
+        }
+
+        to{
+
+                height: 50px;
+
+                font-size: 16px;
+
+        };
+
+}
+
+.header,.container,#photography,.service,.content,.web-development,.photographer,.contact {
+
+        animation: change-color 1s;
+
+        animation-iteration-count: infinite;
+
+        animation-direction: alternate;
+
+        -webkit-animation: change-color 2s;
+
+        -webkit-animation-iteration-count: infinite;
+
+        -webkit-animation-direction: alternate;
+
+}
+
+@keyframes change-color{
+
+        from{
+
+                border: 4px solid gold;
+
+                box-shadow: 0px 5px 10px 15px rgba(1 1 1 /50%);
+
+        }
+
+        to{
+
+                border: 4px solid blue;
+
+                box-shadow: 0px 5px 10px 15px rgba(1 1 1 /15%);
+
+        }
+
+}
+
+@media screen and (min-width: 1000px){
+
+        .header,.container{
+
+                width: 1080px;
+
+                
+
+        }
+
+}
+
+@media screen and (max-width: 10000) {
+
+        .header{
+
+                width: 4800px;
+
+        }
+
+}
+
+        </style>
+
+</head>
+
+<body>
+
+<div class="header">
+
+        <div class="menu">
+
+                <span>Menu</span>
+
+                <div class="drop-down">
+
+                        
+
+                        <p><a href="#photography">Photography</a></p>
+
+                        <p><a href="#service">Service</a></p>
+
+                        <p><a href="#Contact">Contact</a></p>
+
+                        
+
+                </div>
+
+        </div>
+
+        <p class="logo">My work</p>
+
+</div>
+
+<section class="container">
+
+        <div id="photography">
+
+                <div onclick="photography()" class="photography">
+
+                        
+
+                </div>
+
+                <h1></h1>
+
+                <p></p>
+
+                
+
+                <button class="left">Previous</button>
+
+                <button class="right">Next</button>
+
+                
+
+        </div>
+
+        <div id="service" class="service">
+
+                <h1>Service</h1>
+
+                <div class="content">
+
+                        <h1>Content writer </h1>
+
+                        <img src="/IMG20230107165202.jpg">
+
+                        <div class="description">
+
+                                <p>I am a professional content writer.</p>
+
+                        </div>
+
+                        
+
+                </div>
+
+                <div class="web-development">
+
+                        <h1>Web developer</h1>
+
+                        <img src="/IMG20230107165202.jpg" alt="/IMG20230107165202.jpg">
+
+                        <div class="description">
+
+                                I am a professional web developer 
+
+                        </div>
+
+                </div>
+
+                <div class="photographer">
+
+                        <h1>Photographer</h1>
+
+                        <img src="/IMG20230107165202.jpg" alt="/IMG20230107165202.jpg">
+
+                        <div class="description">
+
+                                I am a professional photographer
+
+                        </div>
+
+                </div>
+
+                
+
+        </div>
+
+        <div id="Contact" class="contact">
+
+                <h1>Contact info</h1>
+
+                <div class="phone">
+
+                        <h1>Phone: 01763123739</h1>
+
+                </div>
+
+                
+
+                <div class="email">
+
+                        <h1>Email: studenttajbirislam@gmail.com</h1>
+
+                </div>
+
+                
+
+        </div>
+
+</section>
+
+</body>
+
+</html>
